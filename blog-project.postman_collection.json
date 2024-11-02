@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "f1c02a6e-58ed-4119-9590-bd1cc7cec2c9",
+		"name": "blog-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34111629"
+	},
+	"item": [
+		{
+			"name": "createBlog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"title\": \"Understanding JavaScript Closures\",\r\n    \"content\": \"Closures are a fundamental concept in JavaScript that every developer needs to understand.\",\r\n    \"author\": \"Jane Doe\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/create-blog"
+			},
+			"response": []
+		},
+		{
+			"name": "readBlog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/read-blog"
+			},
+			"response": []
+		},
+		{
+			"name": "updateBlog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n{\r\n    \"title\": \"Understanding JavaScript Closures\",\r\n    \"content\": \"Closures are a fundamental concept in JavaScript that every developer needs to understand.\",\r\n    \"author\": \"Jane willim\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/update-blog/c52d9f6a-ed59-4690-a862-208e783c2b3b"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBlog",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/delete-blog/168b1cfe-0bd5-4e0a-9a01-e7ebe0eb9b22"
+			},
+			"response": []
+		}
+	]
+}
